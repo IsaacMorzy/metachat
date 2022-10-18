@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useMoralis } from "react-moralis";
 import Login from "../components/Login";
 
 export default function Home() {
-  const isAuthenticated = false;
+  const {isAuthenticated, logout} = useMoralis();
 
-  if (!isAuthenticated) return <Login />
+  if (!isAuthenticated) return <Login />;
 
   return (
     <div className="h-screen ">
@@ -14,6 +15,7 @@ export default function Home() {
         {/* <link rel="icon" type="" href="/favicon.ico"> */}
       </Head>
       <h1>Welcome to the Metaverse Dapp</h1>
+      <button onClick={logout}> Logout </button>
     </div>
   );
 }
