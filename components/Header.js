@@ -10,12 +10,12 @@ function Header() {
     <div className="sticky top-0 p-5 z-50 bg-black shadow-small text-pink-500 border-b-2 border-pink-700">
       <div className="grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center">
         <div className="relative h-24 w-24 mx-auto hidden lg:inline-grid">
-          <Image
+          {/* <Image
             layout="fill"
             objectFit="cover"
             className="rounded-full"
-            src="https://links.papareact.com/3pi"
-          />
+            src="https://links"
+          /> */}
         </div>
 
         <div className="col-span-4 text-left lg:text-center">

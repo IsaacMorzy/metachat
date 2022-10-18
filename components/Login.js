@@ -11,7 +11,7 @@ function Login() {
         {/* Logo */}
         <Image
           className="object-cover rounded-full"
-          src="https://links.papareact.com/3pi"
+          src="https://avatars.dicebear.com/api/adventurer/yokdalur-custom-seed.svg"
           height={200}
           width={200}
         />
